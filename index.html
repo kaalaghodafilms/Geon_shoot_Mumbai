@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Kaala Ghoda Films: Day 2 Call Sheet Infographic</title>
+<title>Geon Energy: Shoot Call Sheet</title>
 <script src="https://cdn.tailwindcss.com"></script>
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
@@ -23,8 +23,7 @@
     } 
 }
 body { 
-    font-family: 'Urbanist', 
-    sans-serif; 
+    font-family: 'Urbanist', sans-serif; 
     background-color: #F1FAEE; 
     color: #1D3557; 
 }
@@ -52,32 +51,12 @@ body {
     page-break-before: always; 
 }
 
-#bottom-section {
+/* Ensure inner content of flex cards pushes elements to fill height */
+.card-inner-flex {
     display: flex;
     flex-direction: column;
-    gap: 2rem;
-    width: 100%;
+    height: 100%;
 }
-.bottom-column {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-}
-
-/* For Tablets/Desktop AND Printing: Side-by-side */
-@media (min-width: 1024px), print {
-    #bottom-section {
-        flex-direction: row !important;
-        align-items: stretch;
-    }
-    .bottom-column {
-        width: 50% !important;
-        flex: 1 1 0% !important;
-    }
-}
-
-
 </style>
 </head>
 <body class="antialiased">
@@ -99,10 +78,10 @@ body {
                 <div>
                     <div class="flex items-center gap-6 mb-5">
                         <img src="logo_text.png" alt="Kaala Ghoda Films" class="h-8 md:h-10 object-contain mix-blend-screen">
-                        <img src="geonenergy.png" alt="Sid's Farm" class="h-12 md:h-16 object-contain">
+                        <img src="geonenergy.png" alt="Geon Energy" class="h-12 md:h-16 object-contain">
                     </div>
-                    <span class="text-[#A8DADC] font-bold tracking-widest text-sm uppercase">Kaala Ghoda Films | Call Sheet Day 2</span>
-                    <h1 class="text-4xl md:text-6xl font-serif font-bold mt-2">Geon: Inverter Battery & Integrated Inverter Shoot</h1>
+                    <span class="text-[#A8DADC] font-bold tracking-widest text-sm uppercase">Kaala Ghoda Films | Call Sheet</span>
+                    <h1 class="text-4xl md:text-5xl font-serif font-bold mt-2">Geon: Inverter Battery & Integrated Shoot</h1>
                 </div>
                 <div class="mt-4 md:mt-0 bg-[#F1FAEE]/10 px-6 py-3 rounded-xl border border-[#F1FAEE]/20">
                     <p class="text-sm uppercase tracking-wider text-[#F4A261] font-bold">General Call Time</p>
@@ -118,12 +97,11 @@ body {
                     </div>
                 </div>
                 <div class="flex items-center gap-4 bg-[#1D3557] p-4 rounded-xl border border-[#F1FAEE]/10">
-                    <div class="text-lg font-bold flex items-center gap-2">
-                             
-                            <a href="https://maps.app.goo.gl/vtC1qUv7bzAp24LN8?g_st=iwb" target="_blank" title="Open in Google Maps" class="text-2xl hover:scale-110 transition-transform">📍</a>
+                    <div class="text-lg font-bold flex items-center gap-2">     
+                        <a href="https://maps.app.goo.gl/vtC1qUv7bzAp24LN8?g_st=iwb" target="_blank" title="Open in Google Maps" class="text-2xl hover:scale-110 transition-transform">📍</a>
                     </div>
                     <div>
-                        <p class="text-xs text-[#A8DADC] uppercase tracking-wider font-bold">Locations</p>
+                        <p class="text-xs text-[#A8DADC] uppercase tracking-wider font-bold">Location</p>
                         <p class="text-lg font-bold">FYF STUDIOS</p>
                     </div>
                 </div>
@@ -142,15 +120,15 @@ body {
             </div>
             <div class="mt-6 bg-[#F1FAEE] py-4 rounded-xl border border-[#A8DADC] grid grid-cols-3 items-center text-center divide-x-2 divide-[#A8DADC]">
                 <div class="px-2">
-                    <p class="text-2xl md:text-3xl font-serif font-bold text-[#1D3557]">12<span class="text-sm md:text-lg">h</span></p>
+                    <p class="text-xl md:text-xl font-serif font-bold text-[#1D3557]">10.5<span class="text-sm md:text-lg">h</span></p>
                     <p class="text-[10px] md:text-xs uppercase font-bold text-gray-500 mt-1">Active Shoot</p>
                 </div>
                 <div class="px-2">
-                    <p class="text-2xl md:text-3xl font-serif font-bold text-[#1D3557]">2<span class="text-sm md:text-lg">h</span></p>
+                    <p class="text-xl md:text-xl font-serif font-bold text-[#1D3557]">2.5<span class="text-sm md:text-lg">h</span></p>
                     <p class="text-[10px] md:text-xs uppercase font-bold text-gray-500 mt-1">Breaks</p>
                 </div>
                 <div class="px-2">
-                    <p class="text-2xl md:text-3xl font-serif font-bold text-[#1D3557]">1<span class="text-sm md:text-lg">h</span></p>
+                    <p class="text-xl md:text-xl font-serif font-bold text-[#1D3557]">3<span class="text-sm md:text-lg">h</span></p>
                     <p class="text-[10px] md:text-xs uppercase font-bold text-gray-500 mt-1">Setup</p>
                 </div>
             </div>
@@ -159,48 +137,104 @@ body {
         <section class="lg:col-span-7 bg-white rounded-3xl p-8 md:p-12 card-shadow">
             <h2 class="text-2xl font-serif font-bold text-[#1D3557] mb-8 border-b-4 border-[#F4A261] pb-2 inline-block">Master Shooting Schedule</h2>
             <div class="border-l-4 border-[#A8DADC] ml-2 pl-8 relative space-y-8">
+                
                 <div class="timeline-item relative">
-                    <span class="bg-[#F4A261] text-[#1D3557] px-3 py-1 rounded-md text-sm font-bold border border-[#A8DADC] inline-block mb-2">08:00 AM &mdash; 09:00 AM</span>
+                    <span class="bg-[#1D3557] text-[#F1FAEE] px-3 py-1 rounded-md text-sm font-bold border border-[#A8DADC] inline-block mb-2">08:00 AM</span>
                     <h3 class="text-xl font-bold text-[#1D3557]">Crew Call & Setup</h3>
-                    <p class="text-gray-600 mt-1"><span class="font-bold text-[#1D3557]"><span class="font-bold text-[#1D3557]">Action:</span> Setup</p>
+                    <p class="text-gray-600 mt-1"><span class="font-bold text-[#1D3557]">Action:</span> Initial studio setup and rigging.</p>
                 </div>
 
                 <div class="timeline-item relative">
-                    <span class="bg-[#F4A261] text-[#1D3557] px-3 py-1 rounded-md text-sm font-bold shadow-sm inline-block mb-2">08:30 AM &mdash; 09:00 AM</span>
-                    <h3 class="text-xl font-bold text-[#1D3557] flex items-center gap-2"> Product Requirement </h3>
-                    <p class="text-gray-600 mt-1">Please ensure your team (Geon Energy) brings 1 unit each of both the Inverter battery and Integrated Inverter</p>
+                    <span class="bg-[#A8DADC] text-[#1D3557] px-3 py-1 rounded-md text-sm font-bold shadow-sm inline-block mb-2">08:30 AM</span>
+                    <h3 class="text-xl font-bold text-[#1D3557] flex items-center gap-2">📦 Product Requirement </h3>
+                    <p class="text-gray-600 mt-1">Please ensure your team (Geon Energy) brings 1 unit each of both the Inverter battery and Integrated Inverter.</p>
                 </div>
 
                 <div class="timeline-item relative">
-                    <span class="bg-[#F4A261] text-[#1D3557] px-3 py-1 rounded-md text-sm font-bold shadow-sm inline-block mb-2">09:00 AM</span>
-                    <h3 class="text-xl font-bold text-[#1D3557] flex items-center gap-2"> Cast Call </h3>
+                    <span class="bg-[#E63946] text-[#F1FAEE] px-3 py-1 rounded-md text-sm font-bold shadow-sm inline-block mb-2">09:00 AM</span>
+                    <h3 class="text-xl font-bold text-[#1D3557] flex items-center gap-2">👥 Cast Call </h3>
                 </div>
 
                 <div class="timeline-item relative">
-                    <span class="bg-[#F4A261] text-[#1D3557] px-3 py-1 rounded-md text-sm font-bold shadow-sm inline-block mb-2">10:30 AM</span>
-                    <h3 class="text-xl font-bold text-[#1D3557] flex items-center gap-2"> Client Visit </h3>
+                    <span class="bg-[#F4A261] text-[#1D3557] px-3 py-1 rounded-md text-sm font-bold shadow-sm inline-block mb-2">10:00 AM — 11:00 AM</span>
+                    <h3 class="text-xl font-bold text-[#1D3557] flex items-center gap-2">🎬 SHOOT: Hallway</h3>
+                    <p class="text-gray-600 mt-1 text-sm font-bold text-[#E63946]">Note: Client Visit expected at 10:30 AM.</p>
                 </div>
 
                 <div class="timeline-item relative">
-                    <span class="bg-[#F4A261] text-[#1D3557] px-3 py-1 rounded-md text-sm font-bold shadow-sm inline-block mb-2">9:30 AM &mdash; 12:30 PM</span>
-                    <h3 class="text-xl font-bold text-[#1D3557] flex items-center gap-2">&#127916; SHOOT: </h3>
-                    <p class="text-gray-600 mt-1"><span class="font-bold text-[#1D3557]"> <br> <span class="font-bold text-[#1D3557]">Action:</span> </p>
+                    <span class="bg-[#F4A261] text-[#1D3557] px-3 py-1 rounded-md text-sm font-bold shadow-sm inline-block mb-2">11:00 AM — 12:00 PM</span>
+                    <h3 class="text-xl font-bold text-[#1D3557] flex items-center gap-2">🎬 SHOOT: Living Room</h3>
                 </div>
 
                 <div class="timeline-item relative">
-                    <span class="bg-[#1D3557] text-[#F1FAEE] px-3 py-1 rounded-md text-sm font-bold shadow-sm inline-block mb-2">12:30 PM &mdash; 13:30 PM</span>
-                    <h3 class="text-xl font-bold text-[#1D3557] flex items-center gap-2">&#127828; Lunch Break</h3>
+                    <span class="bg-[#F4A261] text-[#1D3557] px-3 py-1 rounded-md text-sm font-bold shadow-sm inline-block mb-2">12:00 PM — 13:30 PM</span>
+                    <h3 class="text-xl font-bold text-[#1D3557] flex items-center gap-2">🎬 SHOOT: Utility Corner</h3>
                 </div>
 
                 <div class="timeline-item relative">
-                    <span class="bg-[#F4A261] text-[#1D3557] px-3 py-1 rounded-md text-sm font-bold shadow-sm inline-block mb-2">13:30 PM &mdash; 16:30 PM</span>
-                    <h3 class="text-xl font-bold text-[#1D3557] flex items-center gap-2">&#127916; SHOOT: </h3>
-                    <p class="text-gray-600 mt-1"><span class="font-bold text-[#1D3557]"> <br> <span class="font-bold text-[#1D3557]">Action:</span> </p>
+                    <span class="bg-[#1D3557] text-[#F1FAEE] px-3 py-1 rounded-md text-sm font-bold shadow-sm inline-block mb-2">13:30 PM — 14:30 PM</span>
+                    <h3 class="text-xl font-bold text-[#1D3557] flex items-center gap-2">🍔 Lunch Break</h3>
                 </div>
 
                 <div class="timeline-item relative">
-                    <span class="bg-[#1D3557] text-white px-3 py-1 rounded-md text-sm font-bold shadow-sm inline-block mb-2">18:30 PM</span>
-                    <h3 class="text-xl font-bold text-[#1D3557]">&#128683; WRAP DAY 2</h3>
+                    <span class="bg-[#F4A261] text-[#1D3557] px-3 py-1 rounded-md text-sm font-bold shadow-sm inline-block mb-2">14:30 PM — 16:00 PM</span>
+                    <h3 class="text-xl font-bold text-[#1D3557] flex items-center gap-2">🎬 SHOOT: Kitchen</h3>
+                </div>
+
+                <div class="timeline-item relative">
+                    <span class="bg-[#F4A261] text-[#1D3557] px-3 py-1 rounded-md text-sm font-bold shadow-sm inline-block mb-2">16:00 PM — 17:00 PM</span>
+                    <h3 class="text-xl font-bold text-[#1D3557] flex items-center gap-2">🎬 SHOOT: Dining Room</h3>
+                </div>
+
+                <div class="timeline-item relative">
+                    <span class="bg-[#A8DADC] text-[#1D3557] px-3 py-1 rounded-md text-sm font-bold shadow-sm inline-block mb-2">17:00 PM — 18:00 PM</span>
+                    <h3 class="text-xl font-bold text-[#1D3557] flex items-center gap-2">🔄 Setup Change</h3>
+                </div>
+
+                <div class="timeline-item relative">
+                    <span class="bg-[#1D3557] text-[#F1FAEE] px-3 py-1 rounded-md text-sm font-bold shadow-sm inline-block mb-2">18:00 PM — 18:30 PM</span>
+                    <h3 class="text-xl font-bold text-[#1D3557] flex items-center gap-2">☕ Break</h3>
+                </div>
+
+                <div class="timeline-item relative">
+                    <span class="bg-[#E63946] text-[#F1FAEE] px-3 py-1 rounded-md text-sm font-bold shadow-sm inline-block mb-2">18:30 PM — 23:30 PM</span>
+                    <h3 class="text-xl font-bold text-[#1D3557] flex items-center gap-2 mb-2">⚡ ZERO MOMENT SEQUENCE</h3>
+                    <div class="bg-[#F1FAEE] p-4 rounded-xl border border-[#A8DADC] space-y-3">
+                        <div class="flex justify-between border-b border-gray-200 pb-1">
+                            <span class="font-bold text-[#1D3557]">Scene 1: Kitchen</span>
+                            <span class="text-gray-600 text-sm">18:30 — 19:30</span>
+                        </div>
+                        <div class="flex justify-between border-b border-gray-200 pb-1">
+                            <span class="font-bold text-[#1D3557]">Scene 2: Kitchen</span>
+                            <span class="text-gray-600 text-sm">19:30 — 20:00</span>
+                        </div>
+                        <div class="flex justify-between border-b border-gray-200 pb-1">
+                            <span class="font-bold text-[#1D3557] text-[#E63946]">Product Shots</span>
+                            <span class="text-gray-600 text-sm">20:00 — 20:30</span>
+                        </div>
+                        <div class="flex justify-between border-b border-gray-200 pb-1">
+                            <span class="font-bold text-[#1D3557]">Scene 3</span>
+                            <span class="text-gray-600 text-sm">20:30 — 21:30</span>
+                        </div>
+                        <div class="flex justify-between border-b border-gray-200 pb-1">
+                            <span class="font-bold text-[#1D3557]">Dinner</span>
+                            <span class="text-gray-600 text-sm">21:30 — 22:30</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span class="font-bold text-[#1D3557]">Scene 4 (End)</span>
+                            <span class="text-gray-600 text-sm">22:30 — 23:30</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item relative">
+                    <span class="bg-[#A8DADC] text-[#1D3557] px-3 py-1 rounded-md text-sm font-bold shadow-sm inline-block mb-2">23:30 PM — 00:00 AM</span>
+                    <h3 class="text-xl font-bold text-[#1D3557] flex items-center gap-2">⏳ Buffer</h3>
+                </div>
+
+                <div class="timeline-item relative">
+                    <span class="bg-[#1D3557] text-white px-3 py-1 rounded-md text-sm font-bold shadow-sm inline-block mb-2">00:00 AM</span>
+                    <h3 class="text-xl font-bold text-[#1D3557]">🚫 WRAP </h3>
                 </div>
 
             </div>
@@ -209,122 +243,97 @@ body {
 
     <div class="page-break"></div>
 
-    <section id="bottom-section">
+    <section id="bottom-section" class="grid grid-cols-1 md:grid-cols-2 gap-8 w-full items-stretch">
 
-        <!-- LEFT COLUMN -->
-        <div class="bottom-column">
-
-            <!-- Talent Requirements -->
-            <div class="bg-white p-8 rounded-3xl card-shadow" style="border-top:8px solid #F4A261;flex:1;">
-                <h3 class="text-xl font-serif font-bold text-[#1D3557] mb-4 flex items-center gap-3">
-                    <span class="text-3xl">👥</span> Talent Requirements
-                </h3>
-                <div class="bg-[#F1FAEE] p-4 rounded-xl border border-[#A8DADC] mb-4">
-                    <p class="font-bold text-[#1D3557] text-lg">All Cast</p>
-                    <div class="flex justify-between items-center mt-2 border-t border-[#A8DADC] pt-2">
-                        <span class="text-sm text-gray-500 uppercase font-bold">Call Time</span>
-                        <span class="font-bold text-[#E63946]">09:00 AM</span>
-                    </div>
-                    <div class="flex justify-between items-center mt-1">
-                        <span class="text-sm text-gray-500 uppercase font-bold">Wrap Time</span>
-                        <span class="font-bold text-[#E63946]">18:30 PM</span>
-                    </div>
+        <div class="bg-white p-8 rounded-3xl card-shadow card-inner-flex" style="border-top:8px solid #F4A261;">
+            <h3 class="text-xl font-serif font-bold text-[#1D3557] mb-4 flex items-center gap-3">
+                <span class="text-3xl">👥</span> Talent Requirements
+            </h3>
+            <div class="bg-[#F1FAEE] p-4 rounded-xl border border-[#A8DADC] mt-auto">
+                <p class="font-bold text-[#1D3557] text-lg">All Cast</p>
+                <div class="h-px w-full bg-gray-200 mt-2"></div>
+                <div class="flex justify-between items-center mt-2 border-t border-[#A8DADC] pt-2">
+                    <span class="text-sm text-gray-500 uppercase font-bold">Call Time</span>
+                    <span class="font-bold text-[#E63946]">09:00 AM</span>
                 </div>
+                <div class="h-px w-full bg-gray-200 mt-2"></div>
+                <div class="flex justify-between items-center mt-2">
+                    <span class="text-sm text-gray-500 uppercase font-bold">Wrap Time</span>
+                    <span class="font-bold text-[#E63946]">00:00 AM</span>
+                </div>
+                <div class="h-px w-full bg-gray-200 mt-2"></div>
             </div>
+        </div>
 
-            <!-- Safety & Protocol -->
-            <div class="bg-white p-8 rounded-3xl card-shadow" style="border-top:8px solid #E63946;flex:1;">
-                <h3 class="text-xl font-serif font-bold text-[#1D3557] mb-4" style="display:flex;align-items:center;gap:0.75rem;">
-                    <span style="font-size:1.875rem;">⚠️</span> Safety & Protocol
-                </h3>
-                <div class="space-y-4">      
-                    <div>
-                        <p class="font-bold text-[#1D3557]">Hygiene Standards</p>
-                        <p class="text-gray-600 text-sm mt-1">Strict adherence to hygiene protocols and studio usage unconditionally required.</p>
-                    </div>
-                    <div class="h-px w-full bg-gray-200"></div>
-                    <div>
-                        <p class="font-bold text-[#1D3557]">Facility Coordination</p>
-                        <p class="text-gray-600 text-sm mt-1">Coordination alongside studio operational staff to avoid any disruption within the active shoot.</p>
-                    </div>
+        <div class="bg-white p-8 rounded-3xl card-shadow card-inner-flex" style="border-top:8px solid #E63946;">
+            <h3 class="text-xl font-serif font-bold text-[#1D3557] mb-4" style="display:flex;align-items:center;gap:0.75rem;">
+                <span style="font-size:1.875rem;">⚠️</span> Safety Directives
+            </h3>
+            <div class="space-y-4 flex-grow flex flex-col justify-center">
+                <div>
+                    <p class="font-bold text-[#1D3557]">Emergency Service Numbers</p>
+                    <ul class="text-gray-600 text-sm mt-2" style="display:flex;flex-direction:column;gap:0.5rem;">
+                        <li style="display:flex;align-items:center;gap:0.25rem;" class="font-medium">
+                            <span class="text-xs text-black">Ambulance:</span>
+                            <a href="tel:108" class="text-[#E63946] hover:underline font-bold">📞 108</a>
+                        </li>
+                        <li style="display:flex;align-items:center;gap:0.25rem;" class="font-medium">
+                            <span class="text-xs text-black">Fire Dept:</span>
+                            <a href="tel:101" class="text-[#E63946] hover:underline font-bold">📞 101</a>
+                        </li>
+                        <li style="display:flex;align-items:center;gap:0.25rem;" class="font-medium">
+                            <span class="text-xs text-black">Police:</span>
+                            <a href="tel:100" class="text-[#E63946] hover:underline font-bold">📞 100</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="h-px w-full bg-gray-200 my-2"></div>
+                <div>
+                    <p class="font-bold text-[#1D3557]">Nearest Hospital</p>
+                    <p class="text-black text-sm mt-1" style="display:flex;align-items:center;gap:0.25rem;">
+                        Lifeline Medicare Hospital
+                        <a href="https://maps.app.goo.gl/oVXJaSmwtUyt7rmo6?g_st=iw" target="_blank" title="Google Maps" class="text-lg">📍</a>
+                    </p>
+                    <p class="text-[#E63946] font-bold text-sm mt-1">
+                        <a href="tel:+917506058007" class="hover:underline">📞 +91 75060 58007 </a>
+                    </p>
                 </div>
             </div>
         </div>
 
-        <!-- RIGHT COLUMN -->
-        <div class="bottom-column">
-
-            <!-- Safety Directives -->
-            <div class="bg-white p-8 rounded-3xl card-shadow" style="border-top:8px solid #E63946;flex:1;">
-                <h3 class="text-xl font-serif font-bold text-[#1D3557] mb-4" style="display:flex;align-items:center;gap:0.75rem;">
-                    <span style="font-size:1.875rem;">⚠️</span> Safety Directives
-                </h3>
-                <div class="space-y-4">
-                    <div>
-                        <p class="font-bold text-[#1D3557]">Emergency Service Numbers</p>
-                        <ul class="text-gray-600 text-sm mt-1" style="display:flex;flex-direction:column;gap:0.5rem;">
-                            <li style="display:flex;align-items:center;gap:0.25rem;" class="font-medium">
-                                <span class="text-xs text-black">Ambulance:</span>
-                                <a href="tel:108" class="text-[#E63946] hover:underline font-bold">📞 108</a>
-                            </li>
-                            <li style="display:flex;align-items:center;gap:0.25rem;" class="font-medium">
-                                <span class="text-xs text-black">Fire Dept:</span>
-                                <a href="tel:101" class="text-[#E63946] hover:underline font-bold">📞 101</a>
-                            </li>
-                            <li style="display:flex;align-items:center;gap:0.25rem;" class="font-medium">
-                                <span class="text-xs text-black">Police:</span>
-                                <a href="tel:100" class="text-[#E63946] hover:underline font-bold">📞 100</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="h-px w-full bg-gray-200"></div>
-                    <div>
-                        <p class="font-bold text-[#1D3557]">Nearest Hospital</p>
-                        <p class="text-black text-sm mt-1" style="display:flex;align-items:center;gap:0.25rem;">
-                            
-                            <a href="" target="_blank" title="Google Maps" class="text-lg">📍</a>
-                        </p>
-                        <p class="text-[#E63946] font-bold text-sm mt-1">
-                            <a href="tel:+919392402050" class="hover:underline">📞 </a>
-                        </p>
-                    </div>
-                    <div class="h-px w-full bg-gray-200"></div>
-                    <div>
-                        <p class="font-bold text-[#1D3557]">Disaster Management Chevella</p>
-                        <p class="text-gray-600 text-sm mt-1">Additional disaster management support.</p>
-                        <p class="text-[#E63946] font-bold text-sm mt-1">
-                            <a href="tel:+918712699452" class="hover:underline">📞 </a>
-                        </p>
-                    </div>
+        <div class="bg-white p-8 rounded-3xl card-shadow card-inner-flex" style="border-top:8px solid #E63946;">
+            <h3 class="text-xl font-serif font-bold text-[#1D3557] mb-4" style="display:flex;align-items:center;gap:0.75rem;">
+                <span style="font-size:1.875rem;">🛡️</span> Safety & Protocol
+            </h3>
+            <div class="space-y-4 flex-grow flex flex-col justify-center">      
+                <div>
+                    <p class="font-bold text-[#1D3557]">Hygiene Standards</p>
+                    <p class="text-gray-600 text-sm mt-1">Strict adherence to hygiene protocols and studio usage unconditionally required.</p>
+                </div>
+                <div class="h-px w-full bg-gray-200 my-2"></div>
+                <div>
+                    <p class="font-bold text-[#1D3557]">Facility Coordination</p>
+                    <p class="text-gray-600 text-sm mt-1">Coordination alongside studio operational staff to avoid any disruption within the active shoot.</p>
                 </div>
             </div>
+        </div>
 
-            <!-- Technical & Art -->
-            <div class="bg-white p-8 rounded-3xl card-shadow" style="border-top:8px solid #A8DADC;flex:1;">
-                <h3 class="text-xl font-serif font-bold text-[#1D3557] mb-4" style="display:flex;align-items:center;gap:0.75rem;">
-                    <span style="font-size:1.875rem;">💡</span> Technical & Art
-                </h3>
-                <div class="bg-[#1D3557] text-[#F1FAEE] p-5 rounded-xl mb-4">
-                    <p class="text-[#F4A261] text-xs uppercase font-bold tracking-wider mb-2">Camera & Lighting</p>
-                    <p class="text-sm leading-relaxed mb-2"><span class="font-bold text-[#A8DADC]">Studio:</span></p>
-                </div>
-                <div class="mb-4">
-                    <p class="text-sm font-bold text-gray-500 uppercase mb-1">Art Dept/Props</p>
-                    <p class="text-sm text-[#E63946] font-bold"> </p>
-                </div>
-                <div>
-                    <p class="text-sm font-bold text-gray-500 uppercase mb-2">Quick-Reference</p>
-                    <ul class="text-sm text-gray-700 space-y-2">
-                        <li><span class="font-bold text-[#1D3557]">Food:</span> Will be provided on set</li>
-                        <li><span class="font-bold text-[#1D3557]">Weather:</span> TBD</li>
-                        <li style="display:flex;flex-direction:column;margin-top:0.5rem;">
-                            <span class="font-bold text-[#1D3557]">Contact Person: </span> 
-                            <a href="tel:+918582809282" class="text-[#E63946] hover:underline font-bold mt-1 mb-2">📞 +91 8582809282</a>
-                            <span class="font-bold text-[#1D3557]">FYF Studios: </span> 
-                            <a href="tel:+917050847543" class="text-[#E63946] hover:underline font-bold mt-1">📞 +91 70508 47543</a>
-                        </li>
-                    </ul>
-                </div>
+        <div class="bg-white p-8 rounded-3xl card-shadow card-inner-flex" style="border-top:8px solid #A8DADC;">
+            <h3 class="text-xl font-serif font-bold text-[#1D3557] mb-4" style="display:flex;align-items:center;gap:0.75rem;">
+                <span style="font-size:1.875rem;">💡</span> Quick-Reference
+            </h3>
+            <div class="flex-grow flex flex-col justify-center">
+                <ul class="text-sm text-gray-700 space-y-3">
+                    <li class="flex items-center gap-2"><span class="font-bold text-[#1D3557]">Food:</span> Will be provided on set</li>
+                    <li class="flex items-center gap-2"><span class="font-bold text-[#1D3557]">Weather:</span> Indoors (Studio)</li>
+                    <li class="h-px w-full bg-gray-200 my-2"></li>
+                    <li style="display:flex;flex-direction:column;margin-top:0.5rem;">
+                        <span class="font-bold text-[#1D3557]">Contact Person: Aritra Biswas</span> 
+                        <a href="tel:+918582809282" class="text-[#E63946] hover:underline font-bold mt-1 mb-3">📞 +91 8582809282</a>
+                        <span class="font-bold text-[#1D3557]">FYF Studios: </span> 
+                        <a href="tel:+917050847543" class="text-[#E63946] hover:underline font-bold mt-1">📞 +91 70508 47543</a>
+                    </li>
+                </ul>
             </div>
         </div>
 
@@ -337,19 +346,18 @@ body {
         const element = document.getElementById('callsheet-content');
         const opt = {
             margin: 0.4,
-            filename: 'KaalaGhoda_CallSheet_Day2.pdf',
+            filename: 'GeonEnergy_CallSheet.pdf',
             image: { type: 'jpeg', quality: 0.98 },
             html2canvas: {
                 scale: 2,
                 useCORS: true,
                 scrollY: 0,
                 onclone: function(doc) {
-                    // Re-enforce inline styles on the bottom section after cloning
                     const sec = doc.getElementById('bottom-section');
                     if (sec) {
-                        sec.style.cssText = 'display:flex!important;flex-direction:row!important;gap:2rem;align-items:stretch;width:100%;';
-                        Array.from(sec.children).forEach(col => {
-                            col.style.cssText = 'flex:1 1 0%!important;width:50%!important;min-width:0;display:flex!important;flex-direction:column!important;gap:2rem;';
+                        sec.style.cssText = 'display:flex!important; flex-wrap:wrap!important; gap:2rem!important; align-items:stretch!important; justify-content:space-between!important;';
+                        Array.from(sec.children).forEach(card => {
+                            card.style.cssText = 'width:calc(50% - 1rem)!important; display:flex!important; flex-direction:column!important; box-sizing:border-box; page-break-inside: avoid; margin-bottom: 1rem;';
                         });
                     }
                 }
@@ -366,51 +374,37 @@ body {
         html2pdf().set(opt).from(element).save();
     }
 
-    function wrapLabels(labels) {
-        return labels.map(label => {
-            if (label.length <= 16) return label;
-            const words = label.split(' ');
-            const lines = [];
-            let currentLine = '';
-            words.forEach(word => {
-                if ((currentLine + word).length > 36) {
-                    if (currentLine.trim() !== '') lines.push(currentLine.trim());
-                    currentLine = word + ' ';
-                } else {
-                    currentLine += word + ' ';
-                }
-            });
-            if (currentLine.trim() !== '') lines.push(currentLine.trim());
-            return lines;
-        });
-    }
-
+    // Keep tooltips multi-line by returning the array directly
     const tooltipConfig = {
         callbacks: {
             title: function(tooltipItems) {
                 const item = tooltipItems[0];
-                let label = item.chart.data.labels[item.dataIndex];
-                if (Array.isArray(label)) { return label.join(' '); }
-                return label;
+                return item.chart.data.labels[item.dataIndex]; 
             }
         }
     };
 
     const ctx = document.getElementById('timeAllocationChart').getContext('2d');
+    
+    // Formatted as Arrays: First string is line 1, second string is line 2
     const rawLabels = [
-        "Setup & Prep (08:00 - 09:00)",
-        "Shoot: (09:30 - 12:30)",
-        "Lunch Break (12:30 - 13:30)",
-        "Shoot: (13:30 - 18:30)",
+        ["Morning Prep & Moves", "(08:00 - 10:00)"],
+        ["Day Shoot: Multi-Room", "(10:00 - 13:30)"],
+        ["Lunch Break", "(13:30 - 14:30)"],
+        ["Afternoon Shoot", "(14:30 - 17:00)"],
+        ["Setup Change & Break", "(17:00 - 18:30)"],
+        ["Night Shoot: Zero Moment 1", "(18:30 - 21:30)"],
+        ["Dinner", "(21:30 - 22:30)"],
+        ["Night Shoot & Buffer", "(22:30 - 00:00)"]
     ];
 
-    const dataValues = [1, 3, 1, 5];
+    const dataValues = [2, 3.5, 1, 2.5, 1.5, 3, 1, 1.5];
     const chartColors = ['#A8DADC','#F4A261','#E63946','#F4A261','#1D3557','#F4A261','#E63946','#F4A261'];
 
     new Chart(ctx, {
         type: 'doughnut',
         data: {
-            labels: wrapLabels(rawLabels),
+            labels: rawLabels, // Passed directly, wrapLabels function removed
             datasets: [{
                 data: dataValues,
                 backgroundColor: chartColors,
