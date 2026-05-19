@@ -152,7 +152,8 @@ body {
 
                 <div class="timeline-item relative">
                     <span class="bg-[#E63946] text-[#F1FAEE] px-3 py-1 rounded-md text-sm font-bold shadow-sm inline-block mb-2">09:00 AM</span>
-                    <h3 class="text-xl font-bold text-[#1D3557] flex items-center gap-2">👥 Cast Call </h3>
+                    <h3 class="text-xl font-bold text-[#1D3557] flex items-center gap-2">👥 Cast Call 1: Nayi Parampara</h3>
+                    <p class="text-gray-600 mt-1">Arrival of cast for the Nayi Parampara sequence.</p>
                 </div>
 
                 <div class="timeline-item relative">
@@ -184,6 +185,12 @@ body {
                 <div class="timeline-item relative">
                     <span class="bg-[#F4A261] text-[#1D3557] px-3 py-1 rounded-md text-sm font-bold shadow-sm inline-block mb-2">16:00 PM — 17:00 PM</span>
                     <h3 class="text-xl font-bold text-[#1D3557] flex items-center gap-2">🎬 SHOOT: Dining Room</h3>
+                </div>
+
+                <div class="timeline-item relative">
+                    <span class="bg-[#E63946] text-[#F1FAEE] px-3 py-1 rounded-md text-sm font-bold shadow-sm inline-block mb-2">16:30 PM</span>
+                    <h3 class="text-xl font-bold text-[#1D3557] flex items-center gap-2">👥 Cast Call 2: Zero Moment</h3>
+                    <p class="text-gray-600 mt-1">Arrival of cast, including Child Actor, for the Zero Moment sequence.</p>
                 </div>
 
                 <div class="timeline-item relative">
@@ -249,19 +256,34 @@ body {
             <h3 class="text-xl font-serif font-bold text-[#1D3557] mb-4 flex items-center gap-3">
                 <span class="text-3xl">👥</span> Talent Requirements
             </h3>
-            <div class="bg-[#F1FAEE] p-4 rounded-xl border border-[#A8DADC] mt-auto">
-                <p class="font-bold text-[#1D3557] text-lg">All Cast</p>
-                <div class="h-px w-full bg-gray-200 mt-2"></div>
-                <div class="flex justify-between items-center mt-2 border-t border-[#A8DADC] pt-2">
-                    <span class="text-sm text-gray-500 uppercase font-bold">Call Time</span>
-                    <span class="font-bold text-[#E63946]">09:00 AM</span>
+            <div class="bg-[#F1FAEE] p-4 rounded-xl border border-[#A8DADC] mt-auto space-y-4">
+                
+                <div>
+                    <p class="font-bold text-[#1D3557] text-lg">Nayi Parampara Cast</p>
+                    <div class="h-px w-full bg-gray-200 mt-2"></div>
+                    <div class="flex justify-between items-center mt-2">
+                        <span class="text-sm text-gray-500 uppercase font-bold">Call Time</span>
+                        <span class="font-bold text-[#E63946]">09:00 AM</span>
+                    </div>
                 </div>
-                <div class="h-px w-full bg-gray-200 mt-2"></div>
-                <div class="flex justify-between items-center mt-2">
-                    <span class="text-sm text-gray-500 uppercase font-bold">Wrap Time</span>
-                    <span class="font-bold text-[#E63946]">00:00 AM</span>
+
+                <div>
+                    <p class="font-bold text-[#1D3557] text-lg">Zero Moment Cast (inc. Child Actor)</p>
+                    <div class="h-px w-full bg-gray-200 mt-2"></div>
+                    <div class="flex justify-between items-center mt-2">
+                        <span class="text-sm text-gray-500 uppercase font-bold">Call Time</span>
+                        <span class="font-bold text-[#E63946]">16:30 PM</span>
+                    </div>
                 </div>
-                <div class="h-px w-full bg-gray-200 mt-2"></div>
+
+                <div>
+                    <div class="h-px w-full bg-gray-200"></div>
+                    <div class="flex justify-between items-center mt-2">
+                        <span class="text-sm text-gray-500 uppercase font-bold">Wrap Time (All)</span>
+                        <span class="font-bold text-[#E63946]">00:00 AM</span>
+                    </div>
+                </div>
+                
             </div>
         </div>
 
@@ -307,6 +329,11 @@ body {
             </h3>
             <div class="space-y-4 flex-grow flex flex-col justify-center">      
                 <div>
+                    <p class="font-bold text-[#1D3557]">Child Safety Protocol</p>
+                    <p class="text-gray-600 text-sm mt-1">Strict adherence to regulated working hours, mandatory breaks, and provision of dedicated rest areas for Roshni and all child extras. On-set supervision required at all times.</p>
+                </div>
+                <div class="h-px w-full bg-gray-200 my-2"></div>
+                <div>
                     <p class="font-bold text-[#1D3557]">Hygiene Standards</p>
                     <p class="text-gray-600 text-sm mt-1">Strict adherence to hygiene protocols and studio usage unconditionally required.</p>
                 </div>
@@ -320,7 +347,7 @@ body {
 
         <div class="bg-white p-8 rounded-3xl card-shadow card-inner-flex" style="border-top:8px solid #A8DADC;">
             <h3 class="text-xl font-serif font-bold text-[#1D3557] mb-4" style="display:flex;align-items:center;gap:0.75rem;">
-                <span style="font-size:1.875rem;">💡</span> Quick-Reference
+                <span style="font-size:1.875rem;">💡</span> Technical & Art
             </h3>
             <div class="flex-grow flex flex-col justify-center">
                 <ul class="text-sm text-gray-700 space-y-3">
@@ -388,18 +415,19 @@ body {
     
     // Formatted as Arrays: First string is line 1, second string is line 2
     const rawLabels = [
-        ["Morning Prep & Moves", "(08:00 - 10:00)"],
-        ["Day Shoot: Multi-Room", "(10:00 - 13:30)"],
+        ["Morning Prep", "(08:00 - 10:00)"],
+        ["Day Shoot", "(10:00 - 13:30)"],
         ["Lunch Break", "(13:30 - 14:30)"],
         ["Afternoon Shoot", "(14:30 - 17:00)"],
         ["Setup Change & Break", "(17:00 - 18:30)"],
-        ["Night Shoot: Zero Moment 1", "(18:30 - 21:30)"],
+        ["Night Shoot", "(18:30 - 21:30)"],
         ["Dinner", "(21:30 - 22:30)"],
-        ["Night Shoot & Buffer", "(22:30 - 00:00)"]
+        ["Night Shoot", "(22:30 - 23:30)"],
+        ["Buffer", "(23:30 - 00:00)"]
     ];
 
-    const dataValues = [2, 3.5, 1, 2.5, 1.5, 3, 1, 1.5];
-    const chartColors = ['#A8DADC','#F4A261','#E63946','#F4A261','#1D3557','#F4A261','#E63946','#F4A261'];
+    const dataValues = [2, 3.5, 1, 2.5, 1.5, 3, 1, 1, 0.5];
+    const chartColors = ['#A8DADC','#F4A261','#E63946','#F4A261','#1D3557','#F4A261','#E63946','#F4A261','#1D3557'];
 
     new Chart(ctx, {
         type: 'doughnut',
